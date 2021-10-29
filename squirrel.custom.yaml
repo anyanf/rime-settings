@@ -4,6 +4,12 @@ patch:
 
   # 以下软件默认英文模式
   app_options:
+    com.sublimetext.4:              # sb
+        ascii_mode: true            # 开启中文输入
+        ascii_punct: true           # 半角符号即中文状态输入英文标点
+    com.jetbrains.WebStorm:         # ws
+        ascii_mode: true            # 开启中文输入
+        ascii_punct: true           # 半角符号即中文状态输入英文标点
     com.apple.dt.Xcode:
       ascii_mode: true
     com.runningwithcrayons.Alfred:
@@ -54,7 +60,7 @@ patch:
 
 # 如果想要修改皮肤，直接更改 color_scheme 的值即可
   style:
-    color_scheme: apathy
+    color_scheme: mojave_dark
 
   preset_color_schemes:
     mojave_dark:
@@ -62,7 +68,7 @@ patch:
       author: "xiehuc <xiehuc@gmail.com>"
       horizontal: true
       inline_preedit: true
-      candidate_format: "%c %@"
+      candidate_format: "%c\u2005%@ \u2005"
       corner_radius: 5
       hilited_corner_radius: 0
       border_height: 6
@@ -87,7 +93,7 @@ patch:
       back_color: 0xFFFFFF
       border_height: 0
       border_width: 8
-      candidate_format: "%c %@ "
+      candidate_format: "%c\u2005%@ \u2005"
       comment_text_color: 0x999999
       corner_radius: 5
       # font_face: PingFangSC
@@ -228,7 +234,7 @@ patch:
       border_color_width: 0
       border_height: 6
       border_width: 6
-      candidate_format: "%c %@"
+      candidate_format: "%c %@ "
       candidate_text_color: 0xdedddd
       comment_text_color: 0xdedddd
       corner_radius: 5

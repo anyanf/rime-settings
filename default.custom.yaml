@@ -29,6 +29,8 @@ patch:
     - { when: has_menu, accept: equal, send: Page_Down }
     - { when: paging, accept: bracketleft, send: Page_Up }
     - { when: has_menu, accept: bracketright, send: Page_Down }
+    - { when: paging, accept: comma, send: Page_Up }            # ","上一页
+    - { when: has_menu, accept: period, send: Page_Down }       # "."下一页
     # - {accept: "Control+p", send: Up, when: composing}
     # - {accept: "Control+n", send: Down, when: composing}
     # - {accept: "Control+b", send: Left, when: composing}
